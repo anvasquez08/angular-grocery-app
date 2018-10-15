@@ -1,5 +1,7 @@
-<p>
-  grocery-list works!
-  <app-grocery-list-item></app-grocery-list-item>
-</p>
+<section *ngIf="foods.length > 0">
+  <h4>Grocery List</h4>
+  <div *ngFor="let food of foods">
+    <app-grocery-list-item [food]="food"></app-grocery-list-item>
+  </div>
+</section>
 

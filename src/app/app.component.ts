@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { GroceryItem } from './grocery-item'
+import { GroceryDataServiceService } from './grocery-data-service.service';
 
 @Component({
   selector: 'app-root',
@@ -9,4 +10,12 @@ import { GroceryItem } from './grocery-item'
 })
 export class AppComponent {
   title = 'grocery-tracker-app';
+
+  constructor(private groceryService: GroceryDataServiceService) {
+  }
+
+  get foods() {
+    return this.groceryService.getGroceryArray()
+  }
+
 }

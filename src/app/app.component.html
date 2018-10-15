@@ -1,9 +1,6 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    {{ title | uppercase }}!
-  </h1>
+<div class="container">
+  <h1 style="text-align:center"> {{ title | uppercase }}!</h1>
+  <app-grocery-list-form></app-grocery-list-form>
+  <app-grocery-list [foods]="foods"></app-grocery-list>
 </div>
-<app-grocery-list-form></app-grocery-list-form>
 
-<app-grocery-list></app-grocery-list>

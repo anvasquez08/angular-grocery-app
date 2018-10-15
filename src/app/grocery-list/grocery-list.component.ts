@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { GroceryItem } from '../grocery-item'
 
 @Component({
   selector: 'app-grocery-list',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GroceryListComponent implements OnInit {
 
-  constructor() { }
+  @Input()
+  foods : GroceryItem[]
 
-  ngOnInit() {
-  }
+  constructor() { }
+  ngOnInit() {}
 
 }
