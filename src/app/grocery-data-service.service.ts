@@ -7,6 +7,21 @@ import { GroceryItem } from './grocery-item'
 export class GroceryDataServiceService {
 
   constructor() { }
-  list: GroceryItem[] = []
-  
+  list: GroceryItem[] = [{
+    name: 'apples',
+    quantity: 1,
+    category: 'fruit',
+    seasonal: true
+  }]
+
+  addGrocery(values: GroceryItem) : GroceryItem[] {
+    console.log('inside grocery service')
+    this.list.push(values)
+    return this.list
+  }
+
+  getGroceryArray(): GroceryItem[] {
+    console.log('Getting Everything')
+    return this.list
+  }
 }
