@@ -21,7 +21,6 @@ export class GroceryDataServiceService {
   }
 
   getGroceryArray(): GroceryItem[] {
-    console.log('Getting Everything')
     return this.list
   }
 }

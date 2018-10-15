@@ -1,6 +1,6 @@
 <div class="container">
   <h1 style="text-align:center"> {{ title | uppercase }}!</h1>
-  <app-grocery-list-form></app-grocery-list-form>
+  <app-grocery-list-form (add)="onAddGrocery($event)"></app-grocery-list-form>
   <app-grocery-list [foods]="foods"></app-grocery-list>
 </div>
 

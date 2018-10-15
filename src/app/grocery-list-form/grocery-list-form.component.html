@@ -1,3 +1,20 @@
-<p>
-  grocery-list-form works!
-</p>
+<section>
+  <h4>Add Food To Grocery List</h4>
+  <div>
+    <strong>Food Name:</strong>
+    <input [(ngModel)]="newFoodItem.name" placeholder="Food Name"/>
+  </div>
+  <div>
+    <strong>Food Quantity:</strong>
+    <input [(ngModel)]="newFoodItem.quantity"  placeholder="Food Quanitity"/>
+  </div>
+  <div>
+    <strong>Category:</strong>
+    <input [(ngModel)]="newFoodItem.category" placeholder="Food Category"/>
+  </div>
+  <div>
+    <strong>Seasonal:</strong>
+    <input [(ngModel)]="newFoodItem.seasonal" placeholder="seasonal"/>
+  </div>
+  <button (click)="addFood()">Submit</button>
+</section>

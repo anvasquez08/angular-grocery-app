@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { GroceryListFormComponent } from './grocery-list-form/grocery-list-form.component';
@@ -16,7 +17,8 @@ import { GroceryListItemComponent } from './grocery-list-item/grocery-list-item.
     GroceryListItemComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [GroceryDataServiceService],
   bootstrap: [AppComponent]

@@ -18,4 +18,8 @@ export class AppComponent {
     return this.groceryService.getGroceryArray()
   }
 
+  onAddGrocery(values: GroceryItem) {
+    return this.groceryService.addGrocery(values)
+  }
+
 }
