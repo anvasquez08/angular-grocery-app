@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { GroceryItem } from './grocery-item'
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { GroceryListFormComponent } from './grocery-list-form/grocery-list-form.component';
 
-import { GroceryItem } from './grocery-item'
+import { GroceryDataServiceService } from './grocery-data-service.service'
 
 @NgModule({
   declarations: [
@@ -14,7 +14,7 @@ import { GroceryItem } from './grocery-item'
   imports: [
     BrowserModule
   ],
-  providers: [GroceryItem],
+  providers: [GroceryDataServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
